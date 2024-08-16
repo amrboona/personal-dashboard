@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments.html'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">courses..</h1>
+                </header>
+                <div class="course-cards-container d-grid grid-temp-col-300 gap-20 mt-25">
+                    <div class="course-card bg-white round-6 p-relative hidden">
+                        <div class="course-user center-flex width-65 height-65 round-50 border-gray p-absolute hidden">
+                            <img src="imgs/team-01.png" alt="">
+                        </div>
+                        <div class="image-box center-flex">
+                            <img class="width-full" src="imgs/course-01.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="text p-20">
+                                <h4 class="capitalize fs-20 fw-500 mb-10">mastering web design</h4>
+                                <p class="fs-15 fw-400"> master the art of web design and mocking. prototyping and creating web design architecture.</p>
+                            </div>
+                            <div class="course-info width-full p-20 border-gray-top d-flex j-between p-absolute bottom-0 left-0">
+                                <div class="watch d-flex a-center gap-5">
+                                    <i class="fa-solid fa-user fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">952</span>
+                                </div>
+                                <a href="#" class="course-info-btn p-absolute left-50 top-0 bg-blue c-white width-100 height-30 fs-15 fw-500 capitalize round-6 center-flex">course info</a>
+                                <div class="price d-flex a-center gap-5">
+                                    <i class="fa-solid fa-dollar-sign fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card bg-white round-6 p-relative hidden">
+                        <div class="course-user center-flex width-65 height-65 round-50 border-gray p-absolute hidden">
+                            <img src="imgs/team-02.png" alt="">
+                        </div>
+                        <div class="image-box center-flex">
+                            <img class="width-full" src="imgs/course-02.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="text p-20">
+                                <h4 class="capitalize fs-20 fw-500 mb-10">data structure and algorithms</h4>
+                                <p class="fs-15 fw-400"> master the art of web design and mocking. prototyping and creating web design architecture.</p>
+                            </div>
+                            <div class="course-info width-full p-20 border-gray-top d-flex j-between p-absolute bottom-0 left-0">
+                                <div class="watch d-flex a-center gap-5">
+                                    <i class="fa-solid fa-user fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">952</span>
+                                </div>
+                                <a href="#" class="course-info-btn p-absolute left-50 top-0 bg-blue c-white width-100 height-30 fs-15 fw-500 capitalize round-6 center-flex">course info</a>
+                                <div class="price d-flex a-center gap-5">
+                                    <i class="fa-solid fa-dollar-sign fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card bg-white round-6 p-relative hidden">
+                        <div class="course-user center-flex width-65 height-65 round-50 border-gray p-absolute hidden">
+                            <img src="imgs/team-03.png" alt="">
+                        </div>
+                        <div class="image-box center-flex">
+                            <img class="width-full" src="imgs/course-03.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="text p-20">
+                                <h4 class="capitalize fs-20 fw-500 mb-10">responsive web design</h4>
+                                <p class="fs-15 fw-400"> master the art of web design and mocking. prototyping and creating web design architecture.</p>
+                            </div>
+                            <div class="course-info width-full p-20 border-gray-top d-flex j-between p-absolute bottom-0 left-0">
+                                <div class="watch d-flex a-center gap-5">
+                                    <i class="fa-solid fa-user fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">952</span>
+                                </div>
+                                <a href="#" class="course-info-btn p-absolute left-50 top-0 bg-blue c-white width-100 height-30 fs-15 fw-500 capitalize round-6 center-flex">course info</a>
+                                <div class="price d-flex a-center gap-5">
+                                    <i class="fa-solid fa-dollar-sign fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card bg-white round-6 p-relative hidden">
+                        <div class="course-user center-flex width-65 height-65 round-50 border-gray p-absolute hidden">
+                            <img src="imgs/team-04.png" alt="">
+                        </div>
+                        <div class="image-box center-flex">
+                            <img class="width-full" src="imgs/course-04.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="text p-20">
+                                <h4 class="capitalize fs-20 fw-500 mb-10">mastering python</h4>
+                                <p class="fs-15 fw-400"> master the art of web design and mocking. prototyping and creating web design architecture.</p>
+                            </div>
+                            <div class="course-info width-full p-20 border-gray-top d-flex j-between p-absolute bottom-0 left-0">
+                                <div class="watch d-flex a-center gap-5">
+                                    <i class="fa-solid fa-user fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">952</span>
+                                </div>
+                                <a href="#" class="course-info-btn p-absolute left-50 top-0 bg-blue c-white width-100 height-30 fs-15 fw-500 capitalize round-6 center-flex">course info</a>
+                                <div class="price d-flex a-center gap-5">
+                                    <i class="fa-solid fa-dollar-sign fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card bg-white round-6 p-relative hidden">
+                        <div class="course-user center-flex width-65 height-65 round-50 border-gray p-absolute hidden">
+                            <img src="imgs/team-05.png" alt="">
+                        </div>
+                        <div class="image-box center-flex">
+                            <img class="width-full" src="imgs/course-05.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="text p-20">
+                                <h4 class="capitalize fs-20 fw-500 mb-10">PHP examples</h4>
+                                <p class="fs-15 fw-400"> master the art of web design and mocking. prototyping and creating web design architecture.</p>
+                            </div>
+                            <div class="course-info width-full p-20 border-gray-top d-flex j-between p-absolute bottom-0 left-0">
+                                <div class="watch d-flex a-center gap-5">
+                                    <i class="fa-solid fa-user fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">952</span>
+                                </div>
+                                <a href="#" class="course-info-btn p-absolute left-50 top-0 bg-blue c-white width-100 height-30 fs-15 fw-500 capitalize round-6 center-flex">course info</a>
+                                <div class="price d-flex a-center gap-5">
+                                    <i class="fa-solid fa-dollar-sign fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card bg-white round-6 p-relative hidden">
+                        <div class="course-user center-flex width-65 height-65 round-50 border-gray p-absolute hidden">
+                            <img src="imgs/team-02.png" alt="">
+                        </div>
+                        <div class="image-box center-flex">
+                            <img class="width-full" src="imgs/course-02.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="text p-20">
+                                <h4 class="capitalize fs-20 fw-500 mb-10">mastering javaScript</h4>
+                                <p class="fs-15 fw-400"> master the art of web design and mocking. prototyping and creating web design architecture.</p>
+                            </div>
+                            <div class="course-info width-full p-20 border-gray-top d-flex j-between p-absolute bottom-0 left-0">
+                                <div class="watch d-flex a-center gap-5">
+                                    <i class="fa-solid fa-user fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">952</span>
+                                </div>
+                                <a href="#" class="course-info-btn p-absolute left-50 top-0 bg-blue c-white width-100 height-30 fs-15 fw-500 capitalize round-6 center-flex">course info</a>
+                                <div class="price d-flex a-center gap-5">
+                                    <i class="fa-solid fa-dollar-sign fa-fw fs-15"></i>
+                                    <span class="fs-14 fw-400">500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>

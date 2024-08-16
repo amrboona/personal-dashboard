@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments.html'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">dashboard..</h1>
+                </header>
+                <div class="dashboard-page d-grid gap-20 mt-25">
+                    <div class="dashboard-box welcome bg-white round-6 hidden">
+                        <div class="header-container p-relative">
+                            <div class="header-overlay"></div>
+                            <div class="header-content p-20">
+                                <div class="name-and-img">
+                                    <div class="image-box width-60 height-60 round-50 hidden center-flex">
+                                        <img src="imgs/avatar.png" alt="">
+                                    </div>
+                                    <div class="name-box mt-10">
+                                        <h2 class="c-white capitalize fs-20 fw-600 mb-5">amr hisham</h2>
+                                        <p class="c-white capitalize fs-14-fw-400">frontend web developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-information d-flex wrap">
+                            <div class="info-box d-flex d-column a-center gap-5 p-20">
+                                <div class="icon-box width-40 height-40 rgb-blue round-6 center-flex">
+                                    <i class="fa-brands fa-codepen fs-22 c-blue"></i>
+                                </div>
+                                <h1 class="capitalize fs-15 fw-500">position</h1>
+                                <p class="fs-14 fw-400 txt-align">team leader</p>
+                            </div>
+                            <div class="info-box d-flex d-column a-center gap-5 p-20">
+                                <div class="icon-box width-40 height-40 rgb-orange round-6 center-flex">
+                                    <i class="fa-brands fa-python fs-22 c-orange"></i>
+                                </div>
+                                <h1 class="capitalize fs-15 fw-500">language</h1>
+                                <p class="fs-14 fw-400 txt-align">python</p>
+                            </div>
+                            <div class="info-box d-flex d-column a-center gap-5 p-20">
+                                <div class="icon-box width-40 height-40 rgb-green round-6 center-flex">
+                                    <i class="fa-brands fa-dropbox fs-22 c-green"></i>
+                                </div>
+                                <h1 class="capitalize fs-15 fw-500">experience</h1>
+                                <p class="fs-14 fw-400 txt-align">up to 10 years</p>
+                            </div>
+                            <div class="info-box d-flex d-column a-center gap-5 p-20">
+                                <div class="icon-box width-40 height-40 rgb-red round-6 center-flex">
+                                    <i class="fa-brands fa-shopify fs-22 c-red"></i>
+                                </div>
+                                <h1 class="capitalize fs-15 fw-500">company</h1>
+                                <p class="fs-14 fw-400 txt-align">edeeCO</p>
+                            </div>
+                            <div class="info-box d-flex d-column a-center gap-5 p-20">
+                                <div class="icon-box width-40 height-40 rgb-green round-6 center-flex">
+                                    <i class="fa-solid fa-cloud-arrow-up fs-22 c-green"></i>
+                                </div>
+                                <h1 class="capitalize fs-15 fw-500">team</h1>
+                                <p class="fs-14 fw-400 txt-align">arab coders</p>
+                            </div>
+                            <div class="info-box d-flex d-column a-center gap-5 p-20">
+                                <div class="icon-box width-40 height-40 rgb-blue round-6 center-flex">
+                                    <i class="fa-solid fa-certificate fs-22 c-blue"></i>
+                                </div>
+                                <h1 class="capitalize fs-15 fw-500">certificate</h1>
+                                <p class="fs-14 fw-400 txt-align">computer science</p>
+                            </div>
+                        </div>
+                        <div class="user-contacts border-gray-top">
+                            <div class="emails p-20 d-flex d-column gap-15">
+                                <div class="user-contacts-header">
+                                    <h3 class="capitalize fs-17 fw-500">your e-mails:</h3>
+                                </div>
+                                <ul class="emails-container d-flex wrap gap-5">
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">amrboona@hotmail.com</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">ahmedelzero@outlook.com</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">eman@aol.com</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">samy@gmail.com</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">hala@website.net</li>
+                                </ul>
+                            </div>
+                            <div class="numbers p-20 d-flex d-column gap-15 border-gray-top">
+                                <div class="user-contacts-header">
+                                    <h3 class="capitalize fs-17 fw-500">your mobile phone:</h3>
+                                </div>
+                                <ul class="numbers-container d-flex wrap gap-5">
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">+201019648009</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">+504424284</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">+201289718975</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">+404455785</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">+201145818999</li>
+                                    <li class="bg-cyan round-6 pt-5 pb-5 pr-10 pl-10 fs-15 fw-500">+201289718975</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box yearly-targets bg-white round-6">
+                        <div class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">yearly targets</h3>
+                            <p class="fs-15 fw-400">the targets of the year.</p>
+                        </div>
+                        <div class="targets-box d-flex d-column">
+                            <div class="target-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="box-icon width-80 height-80 rgb-blue c-blue round-6 center-flex">
+                                    <i class="fa-brands fa-codiepie fs-30"></i>
+                                </div>
+                                <div class="txt-and-progress d-flex d-column gap-15">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">mony</h4>
+                                        <p class="fs-15 fw-400">$500</p>
+                                    </div>
+                                    <div class="progress-track bg-cyan p-relative round-6">
+                                        <div class="progress-width bg-blue height-full p-absolute top-0 left-0 round-6" style="width: 70%;">
+                                            <div class="progress-percent bg-blue c-white fs-15 fw-500 round-6 center-flex">70%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="target-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="box-icon width-80 height-80 rgb-orange c-orange round-6 center-flex">
+                                    <i class="fa-solid fa-masks-theater fs-30"></i>
+                                </div>
+                                <div class="txt-and-progress d-flex d-column gap-15">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">projects</h4>
+                                        <p class="fs-15 fw-400">24</p>
+                                    </div>
+                                    <div class="progress-track bg-cyan p-relative round-6">
+                                        <div class="progress-width bg-orange height-full p-absolute top-0 left-0 round-6" style="width: 90%;">
+                                            <div class="progress-percent bg-orange c-white fs-15 fw-500 round-6 center-flex">90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="target-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="box-icon width-80 height-80 rgb-green c-green round-6 center-flex">
+                                    <i class="fa-solid fa-meteor fs-30"></i>
+                                </div>
+                                <div class="txt-and-progress d-flex d-column gap-15">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">team</h4>
+                                        <p class="fs-15 fw-400">15</p>
+                                    </div>
+                                    <div class="progress-track bg-cyan p-relative round-6">
+                                        <div class="progress-width bg-green height-full p-absolute top-0 left-0 round-6" style="width: 53%;">
+                                            <div class="progress-percent bg-green c-white fs-15 fw-500 round-6 center-flex">53%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="target-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="box-icon width-80 height-80 rgb-red c-red round-6 center-flex">
+                                    <i class="fa-solid fa-certificate fs-30"></i>
+                                </div>
+                                <div class="txt-and-progress d-flex d-column gap-15">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">certificate</h4>
+                                        <p class="fs-15 fw-400">computer science</p>
+                                    </div>
+                                    <div class="progress-track bg-cyan p-relative round-6">
+                                        <div class="progress-width bg-red height-full p-absolute top-0 left-0 round-6" style="width: 87%;">
+                                            <div class="progress-percent bg-red c-white fs-15 fw-500 round-6 center-flex">87%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="target-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="box-icon width-80 height-80 rgb-orange c-orange round-6 center-flex">
+                                    <i class="fa-solid fa-medal fs-30"></i>
+                                </div>
+                                <div class="txt-and-progress d-flex d-column gap-15">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">medals</h4>
+                                        <p class="fs-15 fw-400">15</p>
+                                    </div>
+                                    <div class="progress-track bg-cyan p-relative round-6">
+                                        <div class="progress-width bg-orange height-full p-absolute top-0 left-0 round-6" style="width: 33%;">
+                                            <div class="progress-percent bg-orange c-white fs-15 fw-500 round-6 center-flex">33%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box latest-news bg-white round-6">
+                        <div class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">latest news</h3>
+                            <p class="fs-15 fw-400">check the latest news in the day.</p>
+                        </div>
+                        <div class="news-box d-flex d-column">
+                            <div class="news-innner-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-100 round-6" src="imgs/news-01.png" alt="">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">create SASS section</h4>
+                                        <p class="fs-15 fw-400">new Sass examples and tutorials</p>
+                                    </div>
+                                </div>
+                                <div class="day bg-cyan width-100 height-30 round-6 center-flex">
+                                    <p class="capitalize fs-14 fw-400">3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-box d-flex d-column border-gray-top">
+                            <div class="news-innner-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-100 round-6" src="imgs/news-02.png" alt="">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">create SASS section</h4>
+                                        <p class="fs-15 fw-400">new Sass examples and tutorials</p>
+                                    </div>
+                                </div>
+                                <div class="day bg-cyan width-100 height-30 round-6 center-flex">
+                                    <p class="capitalize fs-14 fw-400">3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-box d-flex d-column border-gray-top">
+                            <div class="news-innner-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-100 round-6" src="imgs/news-03.png" alt="">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">create SASS section</h4>
+                                        <p class="fs-15 fw-400">new Sass examples and tutorials</p>
+                                    </div>
+                                </div>
+                                <div class="day bg-cyan width-100 height-30 round-6 center-flex">
+                                    <p class="capitalize fs-14 fw-400">3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-box d-flex d-column border-gray-top">
+                            <div class="news-innner-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-100 round-6" src="imgs/news-04.png" alt="">
+                                    <div class="txt">
+                                        <h4 class="capitalize fs-17 fw-500">create SASS section</h4>
+                                        <p class="fs-15 fw-400">new Sass examples and tutorials</p>
+                                    </div>
+                                </div>
+                                <div class="day bg-cyan width-100 height-30 round-6 center-flex">
+                                    <p class="capitalize fs-14 fw-400">3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box latest-tasks bg-white round-6">
+                        <div class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">latest tasks</h3>
+                            <p class="fs-15 fw-400">manage your latest tasks.</p>
+                        </div>
+                        <div class="tasks-box d-flex d-column">
+                            <div class="task-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-17 fw-600">record one new video</h4>
+                                    <p class="fs-15 fw-400">record python create exe projects.</p>
+                                </div>
+                                <div class="remove-icon bg-cyan width-40 height-40 round-6 center-flex gap-5 c-pointer transition-2">
+                                    <i class="fa-solid fa-trash fs-17"></i>
+                                    <p class="capitalize fs-14 fw-500 d-none">remove</p>
+                                </div>
+                            </div>
+                            <div class="task-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-17 fw-600">write an article</h4>
+                                    <p class="fs-15 fw-400">record python create exe projects.</p>
+                                </div>
+                                <div class="remove-icon bg-cyan width-40 height-40 round-6 center-flex gap-5 c-pointer transition-2">
+                                    <i class="fa-solid fa-trash fs-17"></i>
+                                    <p class="capitalize fs-14 fw-500 d-none">remove</p>
+                                </div>
+                            </div>
+                            <div class="task-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-17 fw-600">finish your projects</h4>
+                                    <p class="fs-15 fw-400">record python create exe projects.</p>
+                                </div>
+                                <div class="remove-icon bg-cyan width-40 height-40 round-6 center-flex gap-5 c-pointer transition-2">
+                                    <i class="fa-solid fa-trash fs-17"></i>
+                                    <p class="capitalize fs-14 fw-500 d-none">remove</p>
+                                </div>
+                            </div>
+                            <div class="task-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-17 fw-600">attend the meeting</h4>
+                                    <p class="fs-15 fw-400">record python create exe projects.</p>
+                                </div>
+                                <div class="remove-icon bg-cyan width-40 height-40 round-6 center-flex gap-5 c-pointer transition-2">
+                                    <i class="fa-solid fa-trash fs-17"></i>
+                                    <p class="capitalize fs-14 fw-500 d-none">remove</p>
+                                </div>
+                            </div>
+                            <div class="task-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-17 fw-600">finish lesson</h4>
+                                    <p class="fs-15 fw-400">record python create exe projects.</p>
+                                </div>
+                                <div class="remove-icon bg-cyan width-40 height-40 round-6 center-flex gap-5 c-pointer transition-2">
+                                    <i class="fa-solid fa-trash fs-17"></i>
+                                    <p class="capitalize fs-14 fw-500 d-none">remove</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box latest-uploads bg-white round-6">
+                        <header class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">latest uploads</h3>
+                            <p class="fs-15 fw-400">check the latest news in the day.</p>
+                        </header>
+                        <div class="uploads-box d-flex d-column">
+                            <div class="uploads-innner-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-45 round-6" src="imgs/pdf.svg" alt="">
+                                    <div class="txt">
+                                        <h4 class="fs-17 fw-500">my-file.pdf</h4>
+                                        <p class="fs-15 fw-400">elzero</p>
+                                    </div>
+                                </div>
+                                <div class="size bg-cyan width-80 height-30 round-6 center-flex">
+                                    <p class="fs-14 fw-400">2.52mb</p>
+                                </div>
+                            </div>
+                            <div class="uploads-innner-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-45 round-6" src="imgs/avi.svg" alt="">
+                                    <div class="txt">
+                                        <h4 class="fs-17 fw-500">my-video-file.avi</h4>
+                                        <p class="fs-15 fw-400">admin</p>
+                                    </div>
+                                </div>
+                                <div class="size bg-cyan width-80 height-30 round-6 center-flex">
+                                    <p class="fs-14 fw-400">12.82mb</p>
+                                </div>
+                            </div>
+                            <div class="uploads-innner-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-45 round-6" src="imgs/psd.svg" alt="">
+                                    <div class="txt">
+                                        <h4 class="fs-17 fw-500">my-psd-file.psd</h4>
+                                        <p class="fs-15 fw-400">osama</p>
+                                    </div>
+                                </div>
+                                <div class="size bg-cyan width-80 height-30 round-6 center-flex">
+                                    <p class="fs-14 fw-400">4.3mb</p>
+                                </div>
+                            </div>
+                            <div class="uploads-innner-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="txt-and-image d-flex a-center gap-15">
+                                    <img class="width-45 round-6" src="imgs/eps.svg" alt="">
+                                    <div class="txt">
+                                        <h4 class="fs-17 fw-500">my-eps-file.eps</h4>
+                                        <p class="fs-15 fw-400">designer</p>
+                                    </div>
+                                </div>
+                                <div class="size bg-cyan width-80 height-30 round-6 center-flex">
+                                    <p class="fs-14 fw-400">4.3mb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box reminders bg-white round-6">
+                        <header class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">reminders</h3>
+                            <p class="fs-15 fw-400">we will remind you if you get any notifications.</p>
+                        </header>
+                        <div class="reminders-box d-flex d-column">
+                            <div class="reminder-box p-20 d-flex wrap j-center a-center gap-15">
+                                <div class="point-box width-50 height-50 rgb-blue round-50 center-flex">
+                                    <div class="point-circle bg-blue round-50"></div>
+                                </div>
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">check my task list</h4>
+                                    <p class="fs-14 fw-400">e28/09/2022 - 12:00am</p>
+                                </div>
+                            </div>
+                            <div class="reminder-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="point-box width-50 height-50 rgb-orange round-50 center-flex">
+                                    <div class="point-circle bg-orange round-50"></div>
+                                </div>
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">check my projects list</h4>
+                                    <p class="fs-14 fw-400">e28/09/2022 - 12:00am</p>
+                                </div>
+                            </div>
+                            <div class="reminder-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="point-box width-50 height-50 rgb-green round-50 center-flex">
+                                    <div class="point-circle bg-green round-50"></div>
+                                </div>
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">check my team list</h4>
+                                    <p class="fs-14 fw-400">e28/09/2022 - 12:00am</p>
+                                </div>
+                            </div>
+                            <div class="reminder-box p-20 d-flex wrap j-center a-center gap-15 border-gray-top">
+                                <div class="point-box width-50 height-50 rgb-red round-50 center-flex">
+                                    <div class="point-circle bg-red round-50"></div>
+                                </div>
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">call all my clients</h4>
+                                    <p class="fs-14 fw-400">e28/09/2022 - 12:00am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box latest-posts bg-white round-6">
+                        <header class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600">last post</h3>
+                        </header>
+                        <div class="latest-posts-header p-20 d-flex a-center gap-15">
+                            <div class="image-box width-70 height-70 round-50 hidden center-flex">
+                                <img class="width-full" src="imgs/avatar.png" alt="">
+                            </div>
+                            <div class="header-txt">
+                                <h4 class="capitalize fs-20 fw-600 mb-5">amr hisham</h4>
+                                <p class="fs-15 fw-400">about 3 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="post-container p-20 border-gray-top">
+                            <p class="fs-17 fw-500">you can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.</p>
+                        </div>
+                        <div class="likes-and-comments p-20 border-gray-top d-flex j-between a-center gap-20">
+                            <div class="likes-box d-flex a-center gap-5">
+                                <i class="fa-solid fa-heart fs-20"></i>
+                                <span class="fs-15 fw-700">4.8k</span>
+                            </div>
+                            <div class="likes-box d-flex a-center gap-5">
+                                <i class="fa-solid fa-comment fs-20"></i>
+                                <span class="fs-15 fw-700">568</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-box projects-progress bg-white round-6">
+                        <header class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600">last projects progress</h3>
+                        </header>
+                        <div class="progress-box pt-20 pr-20 pb-20">
+                            <ul class="progress-items d-flex wrap gap-25 p-relative">
+                                <li class="width-full fs-17 fw-500 p-relative done">got the project</li>
+                                <li class="width-full fs-17 fw-500 p-relative done">started the project</li>
+                                <li class="width-full fs-17 fw-500 p-relative done">the project about to finish</li>
+                                <li class="width-full fs-17 fw-500 p-relative done">test the project</li>
+                                <li class="width-full fs-17 fw-500 p-relative current">finish the project and get money</li>
+                                <li class="width-full fs-17 fw-500 p-relative">contact with client</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-box projects-table bg-white round-6 d-flex d-column">
+                    <header class="box-header p-20">
+                        <h3 class="capitalize fs-21 fw-600 mb-5">projects table</h3>
+                        <p class="fs-15 fw-400">check the projects table to know your tasks.</p>
+                    </header>
+                    <div class="responsive-table">
+                        <table class="width-full">
+                            <thead>
+                                <tr>
+                                    <td class="bg-cyan capitalize fs-16 fw-700 p-20 border-gray-bottom txt-align">project name</td>
+                                    <td class="bg-cyan capitalize fs-16 fw-700 p-20 border-gray-left border-gray-bottom txt-align">client deadline</td>
+                                    <td class="bg-cyan capitalize fs-16 fw-700 p-20 border-gray-left border-gray-bottom txt-align">your price</td>
+                                    <td class="bg-cyan capitalize fs-16 fw-700 p-20 border-gray-left border-gray-bottom txt-align">your team</td>
+                                    <td class="bg-cyan capitalize fs-16 fw-700 p-20 border-gray-left border-gray-bottom txt-align">project progress</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="capitalize fs-14 fw-500 p-20 txt-align">hasoub academy</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left txt-align">20/10/2028</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left txt-align">$1.8k</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left">
+                                        <div class="images-container center-flex">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-01.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-02.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-03.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-04.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-05.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="p-20 border-gray-left d-flex j-center a-center">
+                                        <span class="width-100 height-35 bg-blue c-white capitalize fs-14 fw-500 round-6 center-flex">in progress</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-top txt-align">build website</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">8/10/2002</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">$10k</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top">
+                                        <div class="images-container center-flex">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-01.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-02.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-03.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="p-20 border-gray-left border-gray-top d-flex j-center a-center">
+                                        <span class="width-100 height-35 bg-green c-white capitalize fs-14 fw-500 round-6 center-flex">completed</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-top txt-align">oktay AI project</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">14/1/2032</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">$500</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top">
+                                        <div class="images-container center-flex">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-01.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-02.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-03.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-04.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="p-20 border-gray-left border-gray-top d-flex j-center a-center">
+                                        <span class="width-100 height-35 bg-orange c-white capitalize fs-14 fw-500 round-6 center-flex">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-top txt-align">create app</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">6/5/2010</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">$8.45k</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top">
+                                        <div class="images-container center-flex">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-01.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-02.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-03.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-04.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-05.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="p-20 border-gray-left border-gray-top d-flex j-center a-center">
+                                        <span class="width-100 height-35 bg-green c-white capitalize fs-14 fw-500 round-6 center-flex">completed</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-top txt-align">car application</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">23/4/2022</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top txt-align">$20.5k</td>
+                                    <td class="capitalize fs-14 fw-500 p-20 border-gray-left border-gray-top">
+                                        <div class="images-container center-flex">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-01.png" alt="">
+                                            <img class="width-30 height-30 round-50 border-gray" src="imgs/team-02.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="p-20 border-gray-left border-gray-top d-flex j-center a-center txt-align">
+                                        <span class="width-100 height-35 bg-red c-white capitalize fs-14 fw-500 round-6 center-flex">rejected</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>

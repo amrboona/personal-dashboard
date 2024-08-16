@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">profile..</h1>
+                </header>
+                <div class="profile-page d-grid gap-20 mt-25">
+                    <div class="profile-info bg-white round-6 d-grid">
+                        <div class="user-details p-20 border-gray-right d-flex d-column j-center a-center gap-10">
+                            <div class="user-image width-100 height-100 round-50 hidden center-flex">
+                                <img src="imgs/avatar.png" alt="">
+                            </div>
+                            <h3 class="user-name capitalize fs-20 fw-600 txt-align">amr hisham</h3>
+                            <p class="user-level fs-17 fw-500">level 20</p>
+                            <div class="user-track bg-cyan round-6 hidden p-relative">
+                                <p class="user-track-width height-full bg-blue p-absolute top-0 left-0" style="width: 70%;"></p>
+                            </div>
+                            <div class="user-rate">
+                                <div class="stars d-flex a-center gap-5 mb-10">
+                                    <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                    <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                    <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                    <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                </div>
+                                <p class="fs-15 fw-500 capitalize">550 rating</p>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div class="general-info-box p-20 border-gray-bottom d-flex wrap j-between a-center gap-10">
+                                <h3 class="capitalize fs-15 fw-500 width-full">general information</h3>
+                                <div class="full-name d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">full name:</p>
+                                    <span class="capitalize fs-14 fw-400">amr hisham</span>
+                                </div>
+                                <div class="gender d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">gender:</p>
+                                    <span class="capitalize fs-14 fw-400">male</span>
+                                </div>
+                                <div class="country d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">country:</p>
+                                    <span class="capitalize fs-14 fw-400">egypt</span>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="d-flex a-center">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="personal-info-box p-20 border-gray-bottom d-flex wrap j-between a-center gap-10">
+                                <h3 class="capitalize fs-15 fw-500 width-full">personal information</h3>
+                                <div class="e-mail d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">e-mail:</p>
+                                    <span class="fs-14 fw-400">amrboona@hotmail.com</span>
+                                </div>
+                                <div class="phone d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">phone:</p>
+                                    <span class="fs-14 fw-400">+201019648009</span>
+                                </div>
+                                <div class="birth d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">date of birth:</p>
+                                    <span class="cfs-14 fw-400">20/7/2000</span>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="d-flex a-center">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="job-info-box p-20 border-gray-bottom d-flex wrap j-between a-center gap-10">
+                                <h3 class="capitalize fs-15 fw-500 width-full">job information</h3>
+                                <div class="title d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">title:</p>
+                                    <span class="capitalize fs-14 fw-400">frontend developer</span>
+                                </div>
+                                <div class="lang d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">language:</p>
+                                    <span class="capitalize fs-14 fw-400">python</span>
+                                </div>
+                                <div class="exp d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">experience:</p>
+                                    <span class="capitalize fs-14 fw-400">up to 15 years</span>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="d-flex a-center">
+                                        <input class="toggle-checkbox" type="checkbox" checked>
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="billing-info-box p-20 border-gray-bottom d-flex wrap j-between a-center gap-10">
+                                <h3 class="capitalize fs-15 fw-500 width-full">billing information</h3>
+                                <div class="payment d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">payment method:</p>
+                                    <span class="capitalize fs-14 fw-400">paypal</span>
+                                </div>
+                                <div class="subscription d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">subscription:</p>
+                                    <span class="capitalize fs-14 fw-400">monthly</span>
+                                </div>
+                                <div class="price d-flex a-center gap-5">
+                                    <p class="capitalize fs-15 fw-600">price:</p>
+                                    <span class="fs-14 fw-400">$500</span>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="d-flex a-center">
+                                        <input class="toggle-checkbox" type="checkbox" checked>
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-and-activities d-grid gap-20">
+                        <div class="profile-skills bg-white round-6">
+                            <header class="skills-header p-20 border-gray-bottom">
+                                <h4 class="capitalize fs-24 fw-600 mb-10">my skills</h4>
+                                <p class="fs-15 fw-500">complete your tasks on the list.</p>
+                            </header>
+                            <div class="skills-box p-20 d-flex wrap gap-10">
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">html</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">javaScript</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">bootstrap</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">github</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">c++</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">PHP</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">c#</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">tailwindCss</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">react.js</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">vue.js</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">python</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">angular.js</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">typeScript</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">css</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">SQL Server</p>
+                                <p class="bg-cyan fs-14 fw-400 round-6 pr-20 pl-20 pt-5 pb-5 txt-align">mongoDB</p>
+                            </div>
+                        </div>
+                        <div class="profile-activities bg-white round-6">
+                            <header class="activities-header p-20 border-gray-bottom">
+                                <h4 class="capitalize fs-24 fw-600 mb-10">latest activities</h4>
+                                <p class="fs-15 fw-500">latest activities done by user.</p>
+                            </header>
+                            <div class="activity-box p-20 d-flex gap-10 j-between a-center border-gray-bottom">
+                                <div class="icon-and-txt d-flex gap-10 a-center">
+                                    <div class="activity-icon width-65 height-65 round-50 hidden center-flex">
+                                        <img src="imgs/activity-01.png" alt="">
+                                    </div>
+                                    <div class="activity-txt">
+                                        <h4 class="capitalize fs-18 fw-600 mb-5">store</h4>
+                                        <p class="fs-15 fw-500">bought the mastering python course.</p>
+                                    </div>
+                                </div>
+                                <p class="day width-100 height-30 bg-blue c-white round-6 fs-14 fw-500 center-flex capitalize">monday</p>
+                            </div>
+                            <div class="activity-box p-20 d-flex gap-10 j-between a-center border-gray-bottom">
+                                <div class="icon-and-txt d-flex gap-10 a-center">
+                                    <div class="activity-icon width-65 height-65 round-50 hidden center-flex">
+                                        <img src="imgs/activity-02.png" alt="">
+                                    </div>
+                                    <div class="activity-txt">
+                                        <h4 class="capitalize fs-18 fw-600 mb-5">academy</h4>
+                                        <p class="fs-15 fw-500">bought the mastering python course.</p>
+                                    </div>
+                                </div>
+                                <p class="day width-100 height-30 bg-orange c-white round-6 fs-14 fw-500 center-flex capitalize">sunday</p>
+                            </div>
+                            <div class="activity-box p-20 d-flex gap-10 j-between a-center border-gray-bottom">
+                                <div class="icon-and-txt d-flex gap-10 a-center">
+                                    <div class="activity-icon width-65 height-65 round-50 hidden center-flex">
+                                        <img src="imgs/activity-03.png" alt="">
+                                    </div>
+                                    <div class="activity-txt">
+                                        <h4 class="capitalize fs-18 fw-600 mb-5">badges</h4>
+                                        <p class="fs-15 fw-500">bought the mastering python course.</p>
+                                    </div>
+                                </div>
+                                <p class="day width-100 height-30 bg-green c-white round-6 fs-14 fw-500 center-flex capitalize">tuesday</p>
+                            </div>
+                            <div class="activity-box p-20 d-flex gap-10 j-between a-center">
+                                <div class="icon-and-txt d-flex gap-10 a-center">
+                                    <div class="activity-icon width-65 height-65 round-50 hidden center-flex">
+                                        <img src="imgs/activity-02.png" alt="">
+                                    </div>
+                                    <div class="activity-txt">
+                                        <h4 class="capitalize fs-18 fw-600 mb-5">apps</h4>
+                                        <p class="fs-15 fw-500">bought the mastering python course.</p>
+                                    </div>
+                                </div>
+                                <p class="day width-100 height-30 bg-red c-white round-6 fs-14 fw-500 center-flex capitalize">friday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>

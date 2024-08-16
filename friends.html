@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments.html'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">friends..</h1>
+                </header>
+                <div class="friends-container d-grid grid-temp-col-300 gap-20 mt-25">
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-01.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">ahmed nasser</h4>
+                            <p class="fs-15 fw-400">python developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-02.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">samer nader</h4>
+                            <p class="fs-15 fw-400">javascript developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-03.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">sayed mahfouz</h4>
+                            <p class="fs-15 fw-400">c++ developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-04.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">osama rabea</h4>
+                            <p class="fs-15 fw-400">c# developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-05.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">nader saad</h4>
+                            <p class="fs-15 fw-400">ruby developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-01.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">iman mostafa</h4>
+                            <p class="fs-15 fw-400">backend developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-02.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">fatima mohamed</h4>
+                            <p class="fs-15 fw-400">frontend developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-03.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">ahmed elsaid</h4>
+                            <p class="fs-15 fw-400">python developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-04.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">omaima nasr</h4>
+                            <p class="fs-15 fw-400">flutter developer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box bg-white pt-20 pb-20 round-6 p-relative">
+                        <div class="call-and-msg d-flex gap-10 p-absolute">
+                            <div class="call bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-phone fa-fw fs-17"></i>
+                            </div>
+                            <div class="msg bg-cyan width-35 height-35 round-50 center-flex transition-2 c-pointer">
+                                <i class="fa-solid fa-envelope fa-fw fs-17"></i>
+                            </div>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column j-center a-center">
+                            <div class="image width-85 height-85 mb-10 round-50 hidden center-flex">
+                                <img src="imgs/friend-05.jpg" alt="">
+                            </div>
+                            <h4 class="capitalize fs-20 fw-600">tamer ismael</h4>
+                            <p class="fs-15 fw-400">UI&UX designer</p>
+                        </div>
+                        <div class="details p-20 border-gray-bottom d-flex d-column gap-10">
+                            <div class="friends d-flex a-center gap-5">
+                                <i class="fa-solid fa-user-group fw-fa fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">99 friend</span>
+                            </div>
+                            <div class="projects d-flex a-center gap-5">
+                                <i class="fa-solid fa-cloud fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">20 project</span>
+                            </div>
+                            <div class="articles d-flex a-center gap-5">
+                                <i class="fa-solid fa-book-open fa-fw fs-15"></i>
+                                <span class="capitalize fs-14 fw-400">28 article</span>
+                            </div>
+                        </div>
+                        <div class="date-and-btn pt-20 pr-20 pl-20 d-flex j-between a-center">
+                            <div class="date d-flex a-center gap-5">
+                                <span class="capitalize fs-14 fw-400">started:</span>
+                                <span class="capitalize fs-14 fw-400">02/10/2021</span>
+                            </div>
+                            <div class="btn d-flex gap-5">
+                                <a href="#" class="profile bg-blue c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">profile</a>
+                                <a href="#" class="remove bg-red c-white capitalize fs-14 fw-400 pt-5 pr-10 pb-5 pl-10 round-6">remove</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>

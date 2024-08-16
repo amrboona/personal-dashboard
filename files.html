@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments.html'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">files..</h1>
+                </header>
+                <div class="files-container d-grid gap-20 mt-25">
+                    <div class="all-files d-grid grid-temp-col-200 gap-20">
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/pdf.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.pdf</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/dll.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.dll</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/png.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.png</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/psd.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.psd</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/avi.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.avi</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/psd.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.psd</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/avi.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.avi</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/eps.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.eps</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/pdf.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.pdf</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/dll.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.dll</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/png.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.png</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/pdf.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.pdf</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/psd.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.psd</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/avi.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.avi</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                        <div class="box bg-white round-6 p-relative">
+                            <div class="download p-absolute c-pointer">
+                                <i class="fa-solid fa-cloud-arrow-down fa-fw fs-17"></i>
+                            </div>
+                            <div class="header p-20 mt-20 d-flex d-column j-center a-center">
+                                <div class="image width-70 mb-10">
+                                    <img class="width-full" src="imgs/eps.svg" alt="">
+                                </div>
+                                <h4 class="fs-20 fw-600">my-file.eps</h4>
+                            </div>
+                            <p class="file-name fs-15 fw-400 pr-20 pb-20 pl-20 border-gray-bottom">elzero</p>
+                            <div class="date-and-size p-20 d-flex j-between a-center">
+                                <p class="date capitalize fs-14 fw-400">16/5/2021</p>
+                                <p class="size fs-14 fw-400">15.2MB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-files bg-white p-20 round-6 p-sticky d-flex d-column gap-20">
+                        <header class="header">
+                            <h2 class="capitalize fs-27 fw-500">statistics</h2>
+                        </header>
+                        <div class="box bg-cyan p-10 round-6 d-flex j-between a-center gap-5">
+                            <div class="img-and-title d-flex a-center gap-10">
+                                <div class="img-box rgb-blue width-30 height-30 bg-white round-6 center-flex">
+                                    <i class="fa-solid fa-file-pdf fa-fw fs-17 c-blue"></i>
+                                </div>
+                                <p class="capitalize fs-14 fw-400">PDF files</p>
+                            </div>
+                            <p class="size fs-14 fw-400">15.8GB</p>
+                        </div>
+                        <div class="box bg-cyan p-10 round-6 d-flex j-between a-center gap-5">
+                            <div class="img-and-title d-flex a-center gap-10">
+                                <div class="img-box rgb-orange width-30 height-30 bg-white round-6 center-flex">
+                                    <i class="fa-solid fa-file-image fa-fw fs-17 c-orange"></i>
+                                </div>
+                                <p class="capitalize fs-14 fw-400">images files</p>
+                            </div>
+                            <p class="size fs-14 fw-400">1.2GB</p>
+                        </div>
+                        <div class="box bg-cyan p-10 round-6 d-flex j-between a-center gap-5">
+                            <div class="img-and-title d-flex a-center gap-10">
+                                <div class="img-box rgb-green width-30 height-30 bg-white round-6 center-flex">
+                                    <i class="fa-solid fa-file-word fa-fw fs-17 c-green"></i>
+                                </div>
+                                <p class="capitalize fs-14 fw-400">word files</p>
+                            </div>
+                            <p class="size fs-14 fw-400">5.4GB</p>
+                        </div>
+                        <div class="box bg-cyan p-10 round-6 d-flex j-between a-center gap-5">
+                            <div class="img-and-title d-flex a-center gap-10">
+                                <div class="img-box rgb-red width-30 height-30 bg-white round-6 center-flex">
+                                    <i class="fa-solid fa-file-csv fa-fw fs-17 c-red"></i>
+                                </div>
+                                <p class="capitalize fs-14 fw-400">CSV files</p>
+                            </div>
+                            <p class="size fs-14 fw-400">4.98GB</p>
+                        </div>
+                        <button class="upload height-45 bg-blue c-white capitalize fs-15 fw-500 round-6 c-pointer">upload</button>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>

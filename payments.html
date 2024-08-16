@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments.html'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">payments..</h1>
+                </header>
+                <div class="cards-container d-grid grid-temp-col-250 gap-20 mt-25">
+                    <div class="card bg-white round-6 p-relative">
+                        <div class="title p-20">
+                            <p class="bg-orange c-white height-35 capitalize fs-15 fw-500 round-6 center-flex">free plan</p>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column gap-15 a-center">
+                            <h4 class="fs-18 fw-600">$0</h4>
+                            <p class="txt-align fs-15 fw-500">great for starters.</p>
+                            <p class="txt-align fs-15 fw-500">discover how to create your first projects.</p>
+                        </div>
+                        <div class="lines p-20 d-flex d-column gap-15">
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">assets library.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">access to modules.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-xmark fw-fw fs-17 c-red"></i>
+                                <span class="capitalize fs-14 fw-400">no internet connection.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-xmark fw-fw fs-17 c-red"></i>
+                                <span class="capitalize fs-14 fw-400">limited speed.</span>
+                            </div>
+                        </div>
+                        <div class="btn width-full p-20 border-gray-top p-absolute bottom-0 left-0 center-flex">
+                            <a href="#" class="btn-content height-35 round-6 center-flex gap-10 bg-orange c-white">
+                                <i class="fa-solid fa-medal fa-fw fs-18"></i>
+                                <span class="capitalize fs-15 fw-500">start</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white round-6 p-relative">
+                        <div class="title p-20">
+                            <p class="bg-blue c-white height-35 capitalize fs-15 fw-500 round-6 center-flex">lite plan</p>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column gap-15 a-center">
+                            <h4 class="fs-18 fw-600">$15 per month</h4>
+                            <p class="txt-align fs-15 fw-500">for planned projects.</p>
+                            <p class="txt-align fs-15 fw-500">bring your designs to the next level and export them.</p>
+                        </div>
+                        <div class="lines p-20 d-flex d-column gap-15">
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">3 new projects / month.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">basic interaction.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">assets library.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">access to modules.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-xmark fw-fw fs-17 c-red"></i>
+                                <span class="capitalize fs-14 fw-400">no internet connection.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-xmark fw-fw fs-17 c-red"></i>
+                                <span class="capitalize fs-14 fw-400">limited speed.</span>
+                            </div>
+                        </div>
+                        <div class="btn width-full p-20 border-gray-top p-absolute bottom-0 left-0 center-flex">
+                            <a href="#" class="btn-content height-35 round-6 center-flex gap-10 bg-blue c-white">
+                                <i class="fa-solid fa-medal fa-fw fs-18"></i>
+                                <span class="capitalize fs-15 fw-500">start</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card rgb-green border-black round-6 p-relative">
+                        <div class="title p-20">
+                            <p class="bg-green c-white height-35 capitalize fs-15 fw-500 round-6 center-flex">pro plan</p>
+                        </div>
+                        <div class="header p-20 border-black-bottom d-flex d-column gap-15 a-center">
+                            <h4 class="fs-18 fw-600">$50 per year</h4>
+                            <p class="txt-align fs-15 fw-500">for professional use.</p>
+                            <p class="txt-align fs-15 fw-500">enjoy limitless use with interaction export options.</p>
+                        </div>
+                        <div class="lines p-20 d-flex d-column gap-15">
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">3 new projects / month.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">basic interaction.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">assets library.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">access to modules.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">internet connection.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">unlimited speed.</span>
+                            </div>
+                        </div>
+                        <div class="btn width-full p-20 border-black-top p-absolute bottom-0 left-0 center-flex">
+                            <a href="#" class="btn-content height-35 round-6 center-flex gap-10 bg-green c-white">
+                                <i class="fa-solid fa-medal fa-fw fs-18"></i>
+                                <span class="capitalize fs-15 fw-500">start</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white round-6 p-relative">
+                        <div class="title p-20">
+                            <p class="bg-red c-white height-35 capitalize fs-15 fw-500 round-6 center-flex">exrta plan</p>
+                        </div>
+                        <div class="header p-20 border-gray-bottom d-flex d-column gap-15 a-center">
+                            <h4 class="fs-18 fw-600">$1000 per year</h4>
+                            <p class="txt-align fs-15 fw-500">for monster use.</p>
+                            <p class="txt-align fs-15 fw-500">deploy and manage your all works.</p>
+                        </div>
+                        <div class="lines p-20 d-flex d-column gap-15">
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">3 new projects / month.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">basic interaction.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">assets library.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">access to modules.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">internet connection.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">unlimited speed.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">access to documentations.</span>
+                            </div>
+                            <div class="the-line d-flex a-center gap-5">
+                                <i class="fa-solid fa-check fw-fw fs-17 c-green"></i>
+                                <span class="capitalize fs-14 fw-400">free resourses.</span>
+                            </div>
+                        </div>
+                        <div class="btn width-full p-20 border-gray-top p-absolute bottom-0 left-0 center-flex">
+                            <a href="#" class="btn-content height-35 round-6 center-flex gap-10 bg-red c-white">
+                                <i class="fa-solid fa-medal fa-fw fs-18"></i>
+                                <span class="capitalize fs-15 fw-500">start</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>

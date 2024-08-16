@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="width-full">
+            <!-- Start Sidebar -->
+            <aside class="sidebar bg-white pt-20 pb-20 shadow-1 d-flex d-column j-between p-fixed top-0 left-0">
+                <a href="#" class="logo width-full c-black fs-27 fw-600 capitalize center-flex">netlify.</a>
+                <div class="sidebar-content">
+                    <button id="show-menu" class="show-menu width-100 height-35 c-black bg-cyan border-gray round-6 d-none j-center a-center gap-5 c-pointer">
+                        <i class="fa-solid fa-bars fa-fw fs-21"></i>
+                        <span class="capitalize fs-15 fw-400">menu</span>
+                    </button>
+                    <div id="menu" class="sidebar-links bg-white center-flex top-0 transition-1">
+                        <button id="close-menu" class="close-menu width-45 height-45 bg-cyan border-gray-right border-gray-bottom round-br-6 p-absolute top-0 left-0 c-pointer d-none j-center a-center">
+                            <i class="fa-solid fa-xmark fa-fw fs-24"></i>
+                        </button>
+                        <ul class="links width-full d-flex d-column gap-5">
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/'>
+                                    <i class="fa-solid fa-building-columns fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='active width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/settings.html'>
+                                    <i class="fa-solid fa-gear fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/profile.html'>
+                                    <i class="fa-solid fa-user fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/projects.html'>
+                                    <i class="fa-solid fa-award fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/courses.html'>
+                                    <i class="fa-solid fa-user-graduate fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/friends.html'>
+                                    <i class="fa-solid fa-people-group fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">friends</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/files.html'>
+                                    <i class="fa-solid fa-folder-open fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">files</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class='width-full c-black pt-15 pr-20 pb-15 pl-20 d-flex a-center gap-10' href='/payments.html'>
+                                    <i class="fa-solid fa-credit-card fa-fw fs-21"></i>
+                                    <span class="capitalize fs-15 fw-400">payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Site Content -->
+            <section class="content bg-cyan p-20 p-absolute top-0 right-0 d-flex d-column gap-20">
+                <header class="header fit-content">
+                    <h1 class="capitalize fs-32 fw-500 p-relative">settings..</h1>
+                </header>
+                <div class="settings-page d-grid gap-20 mt-25">
+                    <div class="settings-box site-control bg-white round-6">
+                        <div class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">site control</h3>
+                            <p class="fs-15 fw-400">control the website if there is maintenance.</p>
+                        </div>
+                        <div class="site-control-content p-20">
+                            <div class="txt-and-switch-btn d-flex j-between a-center gap-10">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">website control</h4>
+                                    <p class="fs-14 fw-400">Open or Close website and type the reason</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="d-flex a-center">
+                                        <input class="toggle-checkbox" type="checkbox" checked>
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <textarea class="width-full bg-cyan p-20 mt-20 fs-15 fw-500 capitalize round-6" placeholder="close message content..."></textarea>
+                        </div>
+                    </div>
+                    <div class="settings-box security-info bg-white round-6">
+                        <div class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">security info</h3>
+                            <p class="fs-15 fw-400">security information about your account.</p>
+                        </div>
+                        <div class="security-info-content">
+                            <div class="password-and-change-btn p-20 d-flex j-between a-center gap-10">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">password</h4>
+                                    <p class="fs-14 fw-400">last Change On 25/10/2021</p>
+                                </div>
+                                <a href="#" class="change-btn width-80 height-30 bg-blue c-white capitalize fs-15 fw-500 round-6 center-flex">change</a>
+                            </div>
+                            <div class="two-factor-and-switch-btn p-20 d-flex j-between a-center gap-10 border-gray-top">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">two-Factor authentication</h4>
+                                    <p class="fs-14 fw-400">Enable/Disable the feature</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="d-flex a-center">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-switch"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="devices p-20 d-flex j-between a-center gap-10 border-gray-top">
+                                <div class="txt">
+                                    <h4 class="capitalize fs-15 fw-500 mb-5">devices</h4>
+                                    <p class="fs-14 fw-400">check the login devices list</p>
+                                </div>
+                                <a href="#" class="change-btn width-80 height-30 bg-cyan c-black capitalize fs-15 fw-500 round-6 center-flex">devices</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-box general-info bg-white round-6">
+                        <div class="box-header p-20">
+                            <h3 class="capitalize fs-21 fw-600 mb-5">general info</h3>
+                            <p class="fs-15 fw-400">general information about your account.</p>
+                        </div>
+                        <div class="general-info-content">
+                            <div class="first-name-box p-20 d-flex d-column">
+                                <h4 class="capitalize fs-15 fw-500 mb-10">first name:</h4>
+                                <input class="bg-cyan width-full capitalize fs-14 fw-400 p-10 round-6" type="text" placeholder="first name">
+                            </div>
+                            <div class="last-name-box p-20 d-flex d-column border-gray-top">
+                                <h4 class="capitalize fs-15 fw-500 mb-10">last name:</h4>
+                                <input class="bg-cyan width-full capitalize fs-14 fw-400 p-10 round-6" type="text" placeholder="last name">
+                            </div>
+                            <div class="email-box p-20 d-flex d-column border-gray-top">
+                                <h4 class="capitalize fs-15 fw-500 mb-10">e-mail:</h4>
+                                <div class="input-and-change-btn d-flex a-center gap-15">
+                                    <input class="bg-gray width-full fs-14 fw-400 p-10 round-6" type="text" placeholder="email@example.com" disabled>
+                                    <a href="#" class="change-btn c-blue capitalize fs-15 fw-500">change</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Site Content -->
+        </main>
+
+        <!-- Start JS File -->
+        <script src="js/master.js"></script>
+        <!-- End JS File -->
+    </body>
+</html>
